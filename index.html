@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Email, Email Confirmation, Country, Zip Code, Password and Password Confirmation fields -->
+
+	<div>
+		<form>
+			<fieldset>
+				<legend>Form</legend>
+
+				<div class="email">
+					<label for="email"><abbr title="Required field"><sup>*</sup></abbr>Email: </label>
+					<input type="email" id="email" class="input-field" required>
+					
+					<br>
+					
+					<label for="email-confirmation"><abbr title="Required field"><sup>*</sup></abbr>Email Confirmation: </label>
+					<input type="email" id="email-confirmation" class="input-field" required>
+				</div>
+
+				<br>
+
+				<div class="location">
+					<label for="country"><abbr title="Required field"><sup>*</sup></abbr>Country: </label>
+					<select name="country-select" id="country">
+						<option value="USA">USA</option>
+						<option value="Austrailia">Australia</option>
+						<option value="Austria">Austria</option>
+						<option value="Belgium">Belgium</option>
+						<option value="Canada">Canada</option>
+						<option value="Denmark">Denmark</option>
+						<option value="Netherlands">Netherlands</option>
+						<option value="Germany">Hungary</option>
+						<option value="Italy">Italy</option>
+						<option value="Japan">Japan</option>
+						<option value="Luxembourg">Luxembourg</option>
+						<option value="Poland">Poland</option>
+						<option value="Spain">Spain</option>
+						<option value="Sweden">Sweden</option>
+						<option value="United Kingdon">United Kingdon</option>
+					</select>
+					
+					<br>
+
+					<label for="zip-code"><abbr title="Required field"><sup>*</sup></abbr>Zip Code: </label>
+					<input type="number" id="zip-code" class="input-field" required>
+				</div>
+				
+				<br>
+
+				<div class="password">
+					<label for="password"><abbr title="Required field"><sup>*</sup></abbr>Password: </label>
+					<input type="password" id="password" class="input-field" required>
+					
+					<br>
+
+					<label for="password-confirmation"><abbr title="Required field"><sup>*</sup></abbr>Confirm Password: </label>
+					<input type="password" id="password-confirmation" class="input-field" required>
+				</div>
+			<br>
+
+			<input type="submit">
+			
+			</fieldset>
+			
+		</form>
+	</div>
+
+	
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,6 @@
+input:invalid.invalid {
+	/*border: 1px solid red;*/
+	background-color: #ffb3b3;
+}
+
+abbr { color: red; }
